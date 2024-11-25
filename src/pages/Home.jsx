@@ -1,4 +1,5 @@
 import logo from '../assets/react.svg'
+import Menu from '../components/Menu'
 
 export default function () {
   return (
@@ -7,12 +8,7 @@ export default function () {
         <div className="logo">
           <img src={logo} alt=""  />
         </div>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/books">Books</a>
-          <a href="/about">About</a>
-          <a href="/contacts">Contacts</a>
-        </nav>
+        <Menu />
       </header>
       
       <main>
