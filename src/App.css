@@ -5,16 +5,27 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+:root{
+  --text-primary : white;
+  --header-bg: #000;
+  --body-bg: #343434;
+}
+
+body{
+  background: var(--body-bg);
+  color: var(--text-primary);
+}
+
 header{
-  color: #fff;
-  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
-  background:black;
-  /* gap: 2rem; */
+
+  background: var(--header-bg);
+  padding: 1.5rem;
+  
   a{
+    color: var(--text-primary);
     margin: 0 2rem;
     text-decoration: none;
-    color: #fff;
   }
 }
